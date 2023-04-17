@@ -101,7 +101,7 @@
 
     \subsection{Detector construction}
 
-\indent The detector is made of a rectangular monolayer of graphene, approximately 1mm by 0.5mm. This sheet would be held in a 40 gauge titanium wire frame to add flex resistance with little inertia due to low density. On the top of the graphene, the titanium wire is attached to a neodymium magnet. This magnet would be levitated under a type II superconductor, locking the magnet from moving along its x and y-axis (fig. 2) and facilitating rotation with minimal resistance. A high-gauge paramagnetic wire (magnetized by the neodymium magnet) will be attached from the neodymium magnet, down the titanium wire and below the graphene. A hall effect sensor will be placed below the magnetic wire to detect changes in the magnetic field as the graphene and the magnetic wire rotate.
+\indent The detector is made of a rectangular monolayer of graphene, approximately 1mm by 0.5mm. This sheet would be held in a 40 gauge titanium wire frame to add flex resistance with little inertia due to low density. On the top of the graphene, the titanium wire is attached to a neodymium magnet. This magnet would be levitated under a type II superconductor, locking the magnet from moving along its x and y-axis (fig. 2) and facilitating rotation with minimal resistance. A high-gauge ferromagnetic wire (magnetized by the neodymium magnet) will be attached from the neodymium magnet, down the titanium wire and below the graphene. A hall effect sensor will be placed below the magnetic wire to detect changes in the magnetic field as the graphene and the magnetic wire rotate.
 
     \begin{figure}[H]
     \begin{tikzpicture}[scale=1]
@@ -161,7 +161,7 @@
         \node[align=center] at (6.5, 0.1) {\small{Hall}};
         \node[align=center] at (8.4, 6.2) {\small{N}};
         \node[align=center] at (8.4, 5.8) {\small{S}};
-        \draw[decorate,decoration={brace, amplitude=0.25cm, mirror, raise=8ex}] (7.5,0.4) -- (7.5,3.0) node[midway, xshift=9.5em]{paramagnetic wire};
+        \draw[decorate,decoration={brace, amplitude=0.25cm, mirror, raise=8ex}] (7.5,0.4) -- (7.5,3.0) node[midway, xshift=9.5em]{ferromagnetic wire};
 
         \node[opacity=0.15] at (5.65,4.0) {\includegraphics[width=9.5cm,height=5.65cm]{hex_lattice_perspective.png}};
     \end{tikzpicture}
@@ -223,7 +223,7 @@ When shooting the particle beam, the values of $b$ and $p$ will be known while t
 
 To set up experimental components, precise tools are necessary to dimension the graphene and assemble the small frame of the GRAPHS. We would need to caution for accidental mass that increases inertia, though our calculations show that the frame's inertia would be overcome by the particles' effect on the graphene. If the neodimyum is unsuitable for the beamline, the magnet type, as well as the wire frame type, could be altered with little change.
 
-Inspired by the 2021 EXTRA team\cite{EXTRA}, we considered the possibility of a series of filters that would allow for a scattered xray to be detected by the GRAPHS, in the case that we cannot isolate protons through the use of our proposed setup. Using their Monte Carlo simulation, we have adjusted the heatmap to produce the relative torque values across the sensor, and due to the similar scale of the GRAPHS and the Mimosa sensors it would likely produce similar results.
+Inspired by the 2021 EXTRA team\cite{EXTRA}, we considered the possibility of a series of filters that would allow for a scattered xray to be detected by the GRAPHS, in the case that we cannot isolate photons through the use of our proposed setup. Using their Monte Carlo simulation, we have adjusted the heatmap to produce the relative torque values across the sensor, and due to the similar scale of the GRAPHS and the Mimosa sensors it would likely produce similar results.
 
 \begin{figure}[H]
 \includegraphics[scale=0.5]{extra.png}
